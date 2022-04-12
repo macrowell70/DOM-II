@@ -50,16 +50,13 @@ function logText() {
 
 window.addEventListener("load", logText);
 
-
-function clickSignUp() {
-    const newForm = document.createElement("form")
-    newForm.textContent = "This is a form"
-    document.body.appendChild(newForm)
+function addH2() {
+    const newH2 = document.createElement("h2");
+    newH2.textContent = "SCROLLLLLLLLL";
+    document.body.appendChild(newH2);
 }
 
-const signUp1 = document.querySelector(".btn")
-
-signUp1.addEventListener("click", clickSignUp)
+document.addEventListener("scroll", addH2);
 
 
 
