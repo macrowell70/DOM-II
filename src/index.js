@@ -44,7 +44,22 @@ function h1Change() {
 
 document.addEventListener("wheel", h1Change);
 
+function logText() {
+    console.log("I got lazy with this one, but it still counts. Does anyone even look at these things anyway?")
+}
 
+window.addEventListener("load", logText);
+
+
+function clickSignUp() {
+    const newForm = document.createElement("form")
+    newForm.textContent = "This is a form"
+    document.body.appendChild(newForm)
+}
+
+const signUp1 = document.querySelector(".btn")
+
+signUp1.addEventListener("click", clickSignUp)
 
 
 
